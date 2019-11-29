@@ -1,9 +1,70 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-  <title>食品チラシ画像を用いたレシピ推薦システム</title>
-</head>
-<body>
-<h1>食品チラシ画像を用いたレシピ推薦システム</h1>
-</body>
+<html>
+  <head>
+    <title>食品チラシ画像を用いたレシピ推薦システム</title>
+    <meta charset='UTF-8'>
+    <link href='assets/css/style.css' rel='stylesheet' type='text/css'>
+    <meta content='width=device-width,initial-scale=1' name='viewport'>
+  </head>
+  <body>
+    <header>
+      <div class='header-wrapper'>
+        <h1>食品チラシ画像を用いたレシピ推薦システム</h1>
+        <h2 class="etitle">Automatic Recipe Recommendation from Food Flyers</h2>
+        <div class='authors clearfix'>
+          <p>
+            釜田 祐哉
+          </p>
+          <p>
+            <a href='https://seiyaito.github.io'>
+              伊東 聖矢
+            </a>
+          </p>
+          <p>
+            <a href='http://www.cc.aoyama.ac.jp/~sumi_labo/people.php#kaneko'>
+               金子 直史
+            </a>
+          </p>
+          <p>
+            <a href='http://www.cc.aoyama.ac.jp/~sumi_labo/people.php#sumi'>
+               鷲見 和彦
+            </a>
+          </p>
+
+        </div>
+        <div class='belongs'>
+          <p>
+            青山学院大学
+          </p>
+        </div>
+        <div class='abstract'>
+          <h2>Abstract</h2>
+          <p>Making everyday dishes is a vital part of everyday lives.
+This paper proposes a novel system that takes a food flyer of a grocery store to automatically recommend popular recipes containing ingredients appeared in the flyer.
+Based on optical character recognition (OCR) technique, our algorithm extracts the ingredient names from the words in the flyer by matching them with a dedicated ingredient dictionary.
+The extracted ingredients are used as queries to retrieve cooking information from a recipe database.
+Newly proposed word correction scheme using multiple similarity measures robustly corrects misrecognized characters from OCR to boost the extraction performance.
+We conduct both quantitative and subjective evaluation to confirm the effectiveness of the proposed method.
+The subjective evaluation reveals that the proposed system is rated as "effective" by more than 90% of the participants.</p>
+        </div>
+      </div>
+    </header>
+    <div class="contents">
+      <div class="contents-wrapper">
+        <section>
+          <h2>System Overview</h2>
+          <p>
+            <img src="assets/img/overview.png", style="width: 100%;">
+          </p>
+        </section>
+
+        <section>
+          <h2>Demo</h2>
+          <div class="demo">
+            <iframe height="520" src="https://recipefromflyers.vss.it.aoyama.ac.jp" width="100%" frameborder="0" style="border: solid 3px #000000;"></iframe>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
 </html>
